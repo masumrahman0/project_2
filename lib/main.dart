@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:project_2/splash.dart';
 import 'package:project_2/views/Screens/dashboard_screen.dart';
 import 'package:project_2/views/Screens/forgot_password.dart';
@@ -26,6 +27,9 @@ class MyApp extends StatelessWidget {
       },
       theme: ThemeData(
         primarySwatch: Colors.green,
+        textTheme: GoogleFonts.ralewayTextTheme(
+          Theme.of(context).textTheme.apply(),
+          ),
       ),
       home: Splash(),
     );
